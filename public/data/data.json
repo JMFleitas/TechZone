@@ -1,0 +1,28 @@
+{
+  "productos": [
+    {
+      "id": "1234",
+      "nombre": "Notebook Pro",
+      "precio": 12000,
+      "stock": 15,
+      "descripcion": "Notebook de alta gama con procesador Intel Core i7, 16GB de RAM y 512GB de almacenamiento SSD.",
+      "imagen": "/images/NotebookPro.png"
+    },
+    {
+      "id": "2344",
+      "nombre": "Monitor Curvo",
+      "precio": 450000,
+      "stock": 25,
+      "descripcion": "Monitor curvo de 27 pulgadas con resolución 1440p.",
+      "imagen": "/images/MonitorCurvo.png"
+    },
+    {
+      "id": "2545",
+      "nombre": "Teclado Mecánico",
+      "precio": 15000,
+      "stock": 50,
+      "descripcion": "Teclado mecánico con retroiluminación RGB y switches Cherry MX Red.",
+      "imagen": "/images/TecladoMecanico.png"
+    }
+  ]
+}

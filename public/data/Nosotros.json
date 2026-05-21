@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "Roberto García",
+    "email": "roberto.garcia@example.com",
+    "puesto": "Gerente de Ventas",
+    "imagen": "/images/Team/roberto_garcia.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "María López",
+    "email": "maria.lopez@example.com",
+    "puesto": "Asistente de Ventas",
+    "imagen": "/images/Team/maria_lopez.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Carlos Martínez",
+    "email": "carlos.martinez@example.com",
+    "puesto": "Representante de Ventas",
+    "imagen": "/images/Team/carlos_martinez.jpg"
+  }
+]
