@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import TarjetaProducto from "../TarjetaProducto/TarjetaProducto";
 import "./TarjetaProductoContainer.css";
 
-const TarjetaProductoContainer = () => {
+const TarjetaProductoContainer = ({ Mensaje, Destacado }) => {
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -11,6 +11,7 @@ const TarjetaProductoContainer = () => {
       .then((response) => response.json())
       .then((data) => {
         setProductos(data.productos);
+        console.log("Productos cargados:", data.productos);
         setLoading(false);
       })
       .catch((error) => {
@@ -21,12 +22,20 @@ const TarjetaProductoContainer = () => {
 
   if (loading) return <p>Cargando productos...</p>;
 
+  const ProductosAMostrar = Destacado
+    ? productos.filter((prod) => prod.destacado)
+    : productos;
+
   return (
-    <div className="container-layout">
-      {productos.map((prod) => (
-        <TarjetaProducto key={prod.id} producto={prod} />
-      ))}
-    </div>
+    <>
+      <br />
+      <h2>{Mensaje}</h2>
+      <div className="container-layout">
+        {ProductosAMostrar.map((unProducto) => (
+          <TarjetaProducto key={unProducto.id} productos={unProducto} />
+        ))}
+      </div>
+    </>
   );
 };
 

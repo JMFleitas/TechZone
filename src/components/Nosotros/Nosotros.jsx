@@ -10,7 +10,7 @@ const Nosotros = () => {
   useEffect(() => {
     const fetchNosotros = async () => {
       try {
-        const response = await fetch("/public/data/Nosotros.json");
+        const response = await fetch("/data/Nosotros.json");
         if (!response.ok) throw new Error("No se pudo cargar el archivo");
         const data = await response.json();
         setNosotros(data);
